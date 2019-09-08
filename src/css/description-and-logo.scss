@@ -1,0 +1,27 @@
+#description-and-logo {
+    height: 100%;
+    background-color: #f9f9f9;
+    .content-r {
+        text-align: center;
+        margin: auto;
+        position: relative;
+        /* for centralizing the logo */
+        height: 100%;
+    }
+    svg {
+        width: 50%;
+        height: 50%;
+    }
+
+    /* for centralizing the logo */
+    /* it is more convenient using flex-box  */
+    .wrapper {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        margin: auto;
+        height: calc(200px + 7em);
+    }
+}

@@ -1,0 +1,120 @@
+html,body { margin: 0; padding: 0;border: none; font-size: 15px; height: 100%;  }
+body { position: relative;  height: 100%;  font-family: 'Montserrat', sans-serif; }
+
+.header {
+    height: 300px;
+    background-color: #fe0;
+    display: flex;
+}
+
+.footer {
+    background-color: #fe0;
+    display: flex;
+}
+
+.main {
+    margin: 100px 0 100px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #c00;
+}
+
+.article {
+	box-shadow: 0 0 5px #ccc;
+	padding: 10px;
+	margin: 50px 0 50px 0;
+}
+
+main {
+    height: 100%;
+}
+
+.main {
+    height: 100%;
+}
+
+.highlight {
+        background-color: #000;
+        color: #fe0;
+        padding: 2px 5px;
+        border-radius: 5px;
+}
+p {
+	font-size: 17px;
+    line-height: 1.5em;
+}
+
+.title {
+    margin-top: 50px;
+}
+.update > i {
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.full-height {
+    height: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+.strength {
+}
+.strength::before,
+.weakness::before {
+content: "";
+    width: 15px;
+    height: 15px;
+    border: 1px #000 solid;
+    display: inline-block;
+    margin-right: 10px;
+}
+.strength::after {
+content: "";
+    width: 20px;
+    height: 8px;
+    display: inline-block;
+    border-style: solid;
+    border-color: transparent transparent #43853d #43853d;
+    transform: rotateZ(-45deg);
+    position: absolute;
+    left: 0;
+    top: -3px;
+}
+
+
+.weakness::after {
+    content: "+";
+    display: inline-block;
+    transform: rotateZ(-45deg);
+    position: absolute;
+    left: -10px;
+    top: -25px;
+    font-size: 60px;
+    color: #f00;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: "Montserrat";
+    src: url( "/vendor/fonts/Montserrat-ExtraLight.ttf" ) format( "truetype" );
+}
+@font-face {
+    font-family: "Vazir";
+    src: url( "/vendor/fonts/Vazir-Light.ttf" ) format( "truetype" );
+}
+
