@@ -7,6 +7,9 @@
     <main>
     <?php echo file_get_contents( "src/html/logo.html" ); ?>
     <?php echo file_get_contents( "src/html/github-gitlab-pgs.html" ); ?>
+    <?php echo file_get_contents( "src/html/architecture.html" ); ?>
+    <?php echo file_get_contents( "src/html/workflow.html" ); ?>
+    <?php echo file_get_contents( "src/html/use-case.html" ); ?>
 
 
     <?php echo file_get_contents( "src/html/footer.html" ); ?>
