@@ -3,7 +3,7 @@
         <h3 class="sub-title">Github</h3>
         <p>Github is a company that runs servers to manage software source code using <strong>git</strong> tool.</p>
         <p>It has <strong>free</strong> public repositories and <strong>non-free</strong> private repositories.</p>
-        <p>With github we do this where the server is <strong>github.com</strong>:</p>
+        <p>With github we do this where the domain name is <strong>github.com</strong>:</p>
 <pre><code class="language-javascript">// clone a repository
 git clone git@github.com/k-five/private-git-server
 // or
@@ -18,9 +18,9 @@ origin git@github.com/k-five/private-git-server.git (fetch)
 origin git@github.com/k-five/private-git-server.git (push)</code></pre>
 
         <h3 class="sub-title">Gitlab</h3>
-        <p>Gitlab is the same somehow, but has free private repositories.</p>
+        <p>Gitlab is the same somehow.</p>
         <p>It offers both <strong>public</strong> and <strong>private</strong> repositories for free.</p>
-        <p>With gitlab we do this where the server is <strong>gitlab.com</strong></p>
+        <p>With gitlab we do this where the domain name is <strong>gitlab.com</strong></p>
 <pre><code class="language-javascript">// clone a repository
 git clone git@gitlab.com/k-five/private-git-server
 // or
@@ -36,7 +36,7 @@ origin git@gitlab.com/k-five/private-git-server.git (push)</code></pre>
         <h3 class="sub-title">Private Git Server</h3>
         <p>Private git server will be our own server that uses <strong>git</strong> tool as our version control system.</p>
         <p>Although it is possible to have <a target="_blank" href="http://private-git-server.ir/code/">public repositories with a private-git-server</a>, but the main purpose is to have private repositories.</p>
-        <p>With our server we do this where the server is our own at <strong>private-git-server.ir</strong></p>
+        <p>With our server we do this where the domain name is our own at <strong>private-git-server.ir</strong></p>
 <pre><code class="language-javascript">// clone a repository
 git clone git@private-git-server.ir:private-git-server.git
 // or
@@ -46,7 +46,27 @@ git remote add origin git@private-git-server.ir:private-git-server.git
 git push -u origin master
 
 // git remote -v 
+// for our private git server
 origin	git@private-git-server.ir:private-git-server.git (fetch)
 origin	git@private-git-server.ir:private-git-server.git (push)</code></pre>
+
+    <p>It is not accessible to outside world unless we have access to the server using SSH.</p>
+    <p>But for testing purposes your can clone it using <strong>git</strong> protocol.</p>
+<pre><code class="language-javascript">// test if the repository is available
+ git ls-remote  git://95.216.12.6/private-git-server
+5050fde5f52330592fc6a84c83b0fa6149b02026	HEAD
+5050fde5f52330592fc6a84c83b0fa6149b02026	refs/heads/master
+
+// clone the repository
+// this is publicly available just for TEST
+git clone  git://95.216.12.6/private-git-server
+Cloning into 'private-git-server'...
+remote: Counting objects: 112, done.
+remote: Compressing objects: 100% (103/103), done.
+remote: Total 112 (delta 31), reused 0 (delta 0)
+Receiving objects: 100% (112/112), 218.64 KiB | 387.00 KiB/s, done.
+Resolving deltas: 100% (31/31), done.
+Checking connectivity... done.
+</pre></code>
     </div>
 </div>

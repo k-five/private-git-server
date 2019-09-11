@@ -1,0 +1,14 @@
+<div id="workflow" class="">
+    <div class="content-r">
+        <h1 class="sub-title" id="workflow">workflow</h1>
+        <hr>
+        <ol>
+            <li>Our teams, developers code, commit new code and push to the private git server.</p>
+            <li>Private git server receives new code and does a git merge for new code into old one.</p>
+            <li>If merge succeeded, it will be pushed to gitlab (private) repository, or github (public) repository.</p>
+            <li>After successful merge, if there is a test, it cab be run.</p>
+            <li>After successful merge, if there is a build, it cab be run.</p>
+            <li>Finally when there is no error, a change notification is delivered to production server to tell, to synchronize itself with last changes.</p>
+        </ol>
+    </div>
+</div>
