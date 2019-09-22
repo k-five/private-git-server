@@ -10,6 +10,7 @@
     <?php echo file_get_contents( "src/html/architecture.html" ); ?>
     <?php echo file_get_contents( "src/html/workflow.html" ); ?>
     <?php echo file_get_contents( "src/html/use-case.html" ); ?>
+    <?php echo file_get_contents( "src/html/monitoring.html" ); ?>
 
 
     <?php echo file_get_contents( "src/html/footer.html" ); ?>
