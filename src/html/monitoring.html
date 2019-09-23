@@ -16,6 +16,23 @@
         <h3 class="sub-title">Phone based monitoring</h3>
         <p>If we like to receive a kind of notification on our phone, we can setup Text Message Notification.</p>
         <p>This is an asynchronous notification that unlike emailing we do not have to check our email periodically.</p>
+        <p>For example using ndoe.js, or bash API like so:</p>
+<pre><code class="language-bash">#!/bin/bash
+
+# Get the API KEY from your xxxxxxxxx.com account
+readonly API_KEY='our-api-key';
+
+to="$1" 
+from="$2"
+text="$3" 
+
+echo "$(date) ${text} ${from} $to" &amp;&gt;&gt; /tmp/sms.log
+
+curl -X POST "http://api.xxxxxxxxx.com/v2/sms/send/simple" \
+	-H "apikey: ${API_KEY}" \
+	-H 'cache-control: no-cache' \
+	-H 'content-type: application/x-www-form-urlencoded' \
+	-d "message=${text}&amp;linenumber=${from}&amp;receptor=${to}" &amp;&gt;&gt; /tmp/sms.log</code></pre>
 
 
         <h3 class="sub-title">SSH based monitoring</h3>

@@ -15,7 +15,7 @@
 
     <?php echo file_get_contents( "src/html/footer.html" ); ?>
     </main>
-    <script type="application/javascript" src="/vendor/js/prism-5.js"></script>
+    <script type="application/javascript" src="/vendor/js/prism.js"></script>
 </body>
 </html>
 
