@@ -37,11 +37,18 @@ curl -X POST "http://api.xxxxxxxxx.com/v2/sms/send/simple" \
 
 
         <h3 class="sub-title">SSH based monitoring</h3>
-        <p>Using SSH and keeping the connection alive help us to have a secure, fast, amazing monitoring.</p>
-        <p>In interesting part of using SSH is that we can redirect the out to our psuedo-terminal so we can have a single terminal for both pushing and monitoring.</p>
-        <p>Here is screenshot that after pushing to the server, the result can be redirected to us.</p>
+        <p>Using SSH and keeping the connection alive helps us to have a secure, fast, real-time, and amazing monitoring.</p>
+        <p>The interesting part of using SSH is that we can redirect the output to our psuedo-terminal so we can have a single terminal for both pushing and monitoring.</p>
+        <p>Here is screenshot that after pushing to the server, the result is redirected to us.</p>
         <img widht="100%" src="/build/img/ssh-monitoring.png" alt="ssh-monitoring.png">
-
+        <ul>
+            <li>I push to github</li>
+            <li>github notifies jsfun.ir</li>
+            <li>jsfun.ir does a merge</li>
+            <li>merge result comes from server to my local machine using SSH</li>
+            <li>then is redirected to the terminal I pushed from!</li>
+        </ul>
+        <p>All happens within 2 or 3 seconds.</p>
 
         <h3 class="sub-title">Third-party service for monitoring</h3>
     </div>
