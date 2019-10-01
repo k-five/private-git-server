@@ -22,7 +22,7 @@
     <?php echo file_get_contents( "src/html/use-case.html" ); ?>
     <?php echo file_get_contents( "src/html/monitoring.html" ); ?>
     <?php echo file_get_contents( "src/html/task-and-automation.html" ); ?>
-
+    <?php echo file_get_contents( "src/html/contact-me.html" ); ?>
 
     <?php echo file_get_contents( "src/html/footer.html" ); ?>
     </main>
